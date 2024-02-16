@@ -2,14 +2,13 @@ import React from "react";
 
 type TypeProps = {
   fontSize: string,
+  color?: string,
   imgUrl: string,
   link?: string,
   text: string,
 }
 
-type TypeStatic = {
-
-}
+type TypeStatic = {}
 
 class IconText extends React.Component<TypeProps, TypeStatic> {
   constructor(props: TypeProps) {
@@ -21,6 +20,7 @@ class IconText extends React.Component<TypeProps, TypeStatic> {
       <a href={this.props.link} className="icon-text" style={{
         fontSize: this.props.fontSize,
         cursor: (this.props.link != undefined) ? "pointer" : "default",
+        color: (this.props.color != undefined) ? this.props.color : "#000",
       }}>
         <img src={this.props.imgUrl} />
         {this.props.text}

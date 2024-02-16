@@ -8,6 +8,12 @@ html {
 
 body {
   font-family: "Roboto";
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .icon-text {
@@ -17,6 +23,36 @@ body {
   color: #000;
   text-decoration: none;
   gap: 10px;
+}
+
+.nav-panel {
+  padding: 10px 0;
+  background: #313131;
+  color: #fff;
+}
+.nav-panel__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-panel__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.nav-panel__menu a {
+  text-decoration: none;
+  color: #fff;
+}
+.nav-panel__delivery {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

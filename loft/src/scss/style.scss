@@ -5,8 +5,13 @@ $font-color: #000;
 html {box-sizing: border-box;}
 body {
   font-family: "Roboto";
+  font-weight: 400;
+  // font-size: 20px;
 }
-
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
 
 
 //****** IconText styles start ******//
@@ -19,5 +24,42 @@ body {
   gap: 10px;
 }
 //****** IconText styles end ******//
+
+
+//****** NavPanel styles start ******//
+.nav-panel {
+  padding: 10px 0;
+  background: #313131;
+  color: #fff;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    a {
+      font-size: 14px;
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  &__delivery {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    color: #fff;
+  }
+}
+//****** NavPanel styles end ******//
 
 
