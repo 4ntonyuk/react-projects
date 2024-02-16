@@ -1,5 +1,22 @@
+* {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
-  background: #000;
+  font-family: "Roboto";
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  gap: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,7 +3,7 @@ import React from "react";
 type TypeProps = {
   fontSize: string,
   imgUrl: string,
-  link: string,
+  link?: string,
   text: string,
 }
 
@@ -18,12 +18,13 @@ class IconText extends React.Component<TypeProps, TypeStatic> {
   }
   render(): JSX.Element {
     return(
-      <div className="icon-text">
-        <img src={this.props.imgUrl} alt="" />
-        {(this.props.link != undefined) ? 
-          <a href={this.props.link} style={{fontSize: this.props.fontSize}}>{this.props.text}</a> 
-          : <span style={{fontSize: this.props.fontSize}}>{this.props.text}</span>} 
-      </div>
+      <a href={this.props.link} className="icon-text" style={{
+        fontSize: this.props.fontSize,
+        cursor: (this.props.link != undefined) ? "pointer" : "default",
+      }}>
+        <img src={this.props.imgUrl} />
+        {this.props.text}
+      </a>
     );
   }
 }

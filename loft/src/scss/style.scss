@@ -1,3 +1,23 @@
+// colors
+$font-color: #000;
+
+* {box-sizing: inherit;}
+html {box-sizing: border-box;}
 body {
-  background: #000;
+  font-family: "Roboto";
 }
+
+
+
+//****** IconText styles start ******//
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: $font-color;
+  text-decoration: none;
+  gap: 10px;
+}
+//****** IconText styles end ******//
+
+
