@@ -39,12 +39,18 @@ class App extends React.Component<{}, {}> {
           </div>
         </div>
         <div className="range-of-furniture container">
-          <IconText imgUrl="./img/range-of-furniture/kitchen-icon.svg" link="#!" fontSize="16px" text="Кухни"/>
-          <IconText imgUrl="./img/range-of-furniture/bedroom-icon.svg" link="#!" fontSize="16px" text="Спальни"/>
-          <IconText imgUrl="./img/range-of-furniture/livingroom-icon.svg" link="#!" fontSize="16px" text="Гостинные"/>
-          <IconText imgUrl="./img/range-of-furniture/closet-icon.svg" link="#!" fontSize="16px" text="Прихожие"/>
-          <IconText imgUrl="./img/range-of-furniture/office-icon.svg" link="#!" fontSize="16px" text="Офисная мебель"/>
-          <IconText imgUrl="./img/range-of-furniture/childrensroom-icon.svg" link="#!" fontSize="16px" text="Детская"/>
+          <IconText imgUrl="./img/range-of-furniture/kitchen-icon.svg" link="#!"
+                    fontSize="16px" text="Кухни"/>
+          <IconText imgUrl="./img/range-of-furniture/bedroom-icon.svg" link="#!"
+                    fontSize="16px" text="Спальни"/>
+          <IconText imgUrl="./img/range-of-furniture/livingroom-icon.svg" link="#!" 
+                    fontSize="16px" text="Гостинные"/>
+          <IconText imgUrl="./img/range-of-furniture/closet-icon.svg" link="#!" 
+                    fontSize="16px" text="Прихожие"/>
+          <IconText imgUrl="./img/range-of-furniture/office-icon.svg" link="#!" 
+                    fontSize="16px" text="Офисная мебель"/>
+          <IconText imgUrl="./img/range-of-furniture/childrensroom-icon.svg" link="#!" 
+                    fontSize="16px" text="Детская"/>
           <a href="#!" className="font-contrast-color">Акции</a>
           <button className="etc-button"><img src="./img/range-of-furniture/etc.svg" /></button>
         </div>
