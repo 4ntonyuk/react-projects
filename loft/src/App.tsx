@@ -1,6 +1,7 @@
 import React from "react";
 import NavPanel from "./components/NavPanel/NavPanel";
 import Header from "./components/Header/Header";
+import RangeOfFurniture from "./components/RangeOfFurniture/RangeOfFurniture";
 
 class App extends React.Component<{}, {}> {
   constructor(props: {}) {
@@ -12,6 +13,7 @@ class App extends React.Component<{}, {}> {
       <React.StrictMode>
         <NavPanel />
         <Header />
+        <RangeOfFurniture />
       </React.StrictMode>  
     );
   }

@@ -20,7 +20,7 @@ class IconText extends React.Component<TypeProps, TypeStatic> {
       <a href={this.props.link} className="icon-text" style={{
         fontSize: this.props.fontSize,
         cursor: (this.props.link != undefined) ? "pointer" : "default",
-        color: (this.props.color != undefined) ? this.props.color : "#000",
+        color: (this.props.color != undefined) ? this.props.color : "#414141",
       }}>
         <img src={this.props.imgUrl} />
         {this.props.text}

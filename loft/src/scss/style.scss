@@ -1,6 +1,6 @@
 // colors
-$font-color: #000;
-
+$font-color: #414141;
+$contrast-color: #d74444;
 
 body {
   font-family: "Roboto";
@@ -8,15 +8,20 @@ body {
   user-select: none;
   // font-size: 20px;
 }
+
+a {
+  color: $font-color;
+}
+img {
+  pointer-events: none;
+}
+.font-contrast-color {
+  color: $contrast-color;
+}
 .container {
   max-width: 1140px;
   margin: 0 auto;
 }
-
-img {
-  pointer-events: none;
-}
-
 //****** IconText styles start ******//
 .icon-text {
   display: flex;
@@ -34,14 +39,12 @@ img {
   padding: 10px 0;
   background: #313131;
   color: #fff;
-
   &__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-
   &__menu {
     display: flex;
     flex-direction: row;
@@ -54,7 +57,6 @@ img {
       color: #fff;
     }
   }
-
   &__delivery {
     display: flex;
     flex-direction: row;
@@ -73,7 +75,6 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-
   &__logo {
     margin-right: 40px;
   }
@@ -94,6 +95,7 @@ img {
       padding: 17px 50px;
       width: 100%;
       border: 1px solid #e6e6e6;
+      color: $font-color;
     }
     input[type="search"]::-moz-placeholder { color: #414141; }
     input[type="search"]::-webkit-input-placeholder { color: #414141; }
@@ -108,5 +110,23 @@ img {
   }
 }
 //****** Header styles end ******//
+
+
+
+//****** RangeOfFurniture styles start ******//
+.range-of-furniture {
+  padding: 24px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.07);
+  &__etc-button {
+    padding: 10px;
+  }
+}
+//****** RangeOfFurniture styles end ******//
 
 
