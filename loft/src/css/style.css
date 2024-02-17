@@ -77,7 +77,7 @@ img {
   position: relative;
   width: 75%;
 }
-.header__search svg {
+.header__search .search-icon {
   position: absolute;
   left: 15px;
 }
@@ -116,8 +116,8 @@ img {
   -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.07);
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.07);
 }
-.range-of-furniture__etc-button {
-  padding: 10px;
+.range-of-furniture .etc-button {
+  padding: 8px 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
