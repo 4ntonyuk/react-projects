@@ -18,7 +18,7 @@ class App extends React.Component<{}, {}> {
             </div>
             <div className="nav-panel__delivery">
               <IconText imgUrl="./img/nav-panel/phone.svg" fontSize="14px" 
-                        text="8 (964) 89 99 119" color="#fff" />
+                        text="8 (964) 89 99 119" color="#fff"/>
               <IconText imgUrl="./img/nav-panel/delivery-icon.svg" link="#!" fontSize="14px" 
                         text="Доставка" color="#fff"/>
             </div>
@@ -34,8 +34,8 @@ class App extends React.Component<{}, {}> {
           </div>
           <div className="header__buttons">
             <a href="#!"><img src="./img/header/wishlist-icon.svg" /></a>
-            <a href="#!"><img src="./img/header/bag.svg" /></a>
-            <a href="#!"><img src="./img/header/profile-icon.svg" /></a>
+            <a href="#!"><img src="./img/header/bag.svg"/></a>
+            <a href="#!"><img src="./img/header/profile-icon.svg"/></a>
           </div>
         </div>
         <div className="range-of-furniture container">
@@ -52,7 +52,7 @@ class App extends React.Component<{}, {}> {
           <IconText imgUrl="./img/range-of-furniture/childrensroom-icon.svg" link="#!" 
                     fontSize="16px" text="Детская"/>
           <a href="#!" className="font-contrast-color">Акции</a>
-          <button className="etc-button"><img src="./img/range-of-furniture/etc.svg" /></button>
+          <button className="etc-button"><img src="./img/range-of-furniture/etc.svg"/></button>
         </div>
       </React.StrictMode>  
     );

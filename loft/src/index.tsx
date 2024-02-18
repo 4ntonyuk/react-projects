@@ -5,4 +5,4 @@ import "./css/style.css";
 
 ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
-).render(<App />);
+).render(<App/>);
