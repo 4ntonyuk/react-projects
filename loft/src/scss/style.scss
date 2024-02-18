@@ -1,22 +1,26 @@
-// colors
-$font-color: #414141;
-$contrast-color: #d74444;
+:root {
+  --font-color: #414141;
+  --font-accent-color: #d74444;
+  --font-contrast-color: #fff;
+
+  --slider-height: 100px;
+  --slider-width: 100%;
+}
 
 body {
   font-family: "Roboto";
   font-weight: 400;
   user-select: none;
-  // font-size: 20px;
 }
 
 a {
-  color: $font-color;
+  color: var(--font-accent-color);
 }
 img {
   pointer-events: none;
 }
 .font-contrast-color {
-  color: $contrast-color;
+  color: var(--font-accent-color);
 }
 .container {
   max-width: 1140px;
@@ -27,18 +31,19 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  color: $font-color;
+  color: var(--font-color);
   text-decoration: none;
   gap: 10px;
 }
 //****** IconText styles end ******//
 
 
+
 //****** NavPanel styles start ******//
 .nav-panel {
   padding: 10px 0;
   background: #313131;
-  color: #fff;
+  color: var(--font-contrast-color);
   &__wrapper {
     display: flex;
     flex-direction: row;
@@ -54,7 +59,7 @@ img {
     a {
       font-size: 14px;
       text-decoration: none;
-      color: #fff;
+      color: var(--font-contrast-color);
     }
   }
   &__delivery {
@@ -62,10 +67,11 @@ img {
     flex-direction: row;
     align-items: center;
     gap: 30px;
-    color: #fff;
+    color: var(--font-contrast-color);
   }
 }
 //****** NavPanel styles end ******//
+
 
 
 //****** Header styles start ******//
@@ -95,7 +101,7 @@ img {
       padding: 17px 50px;
       width: 100%;
       border: 1px solid #e6e6e6;
-      color: $font-color;
+      color: var(--font-color);
     }
     input[type="search"]::-moz-placeholder { color: #414141; }
     input[type="search"]::-webkit-input-placeholder { color: #414141; }

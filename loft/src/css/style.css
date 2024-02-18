@@ -1,3 +1,11 @@
+:root {
+  --font-color: #414141;
+  --font-accent-color: #d74444;
+  --font-contrast-color: #fff;
+  --slider-height: 100px;
+  --slider-width: 100%;
+}
+
 body {
   font-family: "Roboto";
   font-weight: 400;
@@ -5,7 +13,7 @@ body {
 }
 
 a {
-  color: #414141;
+  color: var(--font-accent-color);
 }
 
 img {
@@ -13,7 +21,7 @@ img {
 }
 
 .font-contrast-color {
-  color: #d74444;
+  color: var(--font-accent-color);
 }
 
 .container {
@@ -25,7 +33,7 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  color: #414141;
+  color: var(--font-color);
   text-decoration: none;
   gap: 10px;
 }
@@ -33,7 +41,7 @@ img {
 .nav-panel {
   padding: 10px 0;
   background: #313131;
-  color: #fff;
+  color: var(--font-contrast-color);
 }
 .nav-panel__wrapper {
   display: flex;
@@ -51,14 +59,14 @@ img {
 .nav-panel__menu a {
   font-size: 14px;
   text-decoration: none;
-  color: #fff;
+  color: var(--font-contrast-color);
 }
 .nav-panel__delivery {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 30px;
-  color: #fff;
+  color: var(--font-contrast-color);
 }
 
 .header {
@@ -89,7 +97,7 @@ img {
   padding: 17px 50px;
   width: 100%;
   border: 1px solid #e6e6e6;
-  color: #414141;
+  color: var(--font-color);
 }
 .header__search input[type=search]::-moz-placeholder {
   color: #414141;
