@@ -14,7 +14,7 @@ class SliderItem extends React.Component<TypeProps, {}> {
   render(): JSX.Element {
     return(
       <div className="slider-item">
-
+        
       </div>
     );
   }

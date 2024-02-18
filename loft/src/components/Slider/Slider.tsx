@@ -3,7 +3,7 @@ import SliderItem from "./SliderItem";
 
 type TypeState = {
   sliderElement: number,
-  heightSliderElemet: number,
+  widthSliderElemet: number,
   currentSliderOffset: number,
 }
 
@@ -12,14 +12,16 @@ class Slider extends React.Component<{}, TypeState> {
     super(props);
     this.state = {
       sliderElement: 1,
-      heightSliderElemet: Number(getComputedStyle(document.documentElement)
-                          .getPropertyValue("--slider-height")
+      widthSliderElemet: Number(getComputedStyle(document.documentElement)
+                          .getPropertyValue("--container-width")
                           .replace("px", "")),
       currentSliderOffset: 0,
     };
+    this.handleArrowClick = this.handleArrowClick.bind(this);
   }
+
   render(): JSX.Element {
-    {console.log(this.state.heightSliderElemet)}
+    {console.log(this.state.widthSliderElemet)}
     return(
       <div className="slider">
         <div className="slider__view">
@@ -31,6 +33,25 @@ class Slider extends React.Component<{}, TypeState> {
       </div>
     );
   }
-  
+
+  handleArrowClick(direction: string): void {
+    switch(direction) {
+      case "left":
+        this.setState({
+          currentSliderOffset: Math.min(this.state.currentSliderOffset + 
+                                        this.state.widthSliderElemet, 0)
+        })
+        break;
+      case "right":
+        this.setState({
+          currentSliderOffset: Math.max(
+            this.state.currentSliderOffset - this.state.widthSliderElemet,
+            -(this.state.sliderElement) // дописать!!!                              ~~~~~~~~~~~~~~~~~~~~
+          )
+        })
+        break;
+      default: break;
+    }
+  }
 }
 export default Slider;

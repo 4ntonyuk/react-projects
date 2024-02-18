@@ -2,8 +2,8 @@
   --font-color: #414141;
   --font-accent-color: #d74444;
   --font-contrast-color: #fff;
+  --container-width: 1024px;
   --slider-height: 100px;
-  --slider-width: 100%;
 }
 
 body {
@@ -25,7 +25,7 @@ img {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: var(--container-width);
   margin: 0 auto;
 }
 
