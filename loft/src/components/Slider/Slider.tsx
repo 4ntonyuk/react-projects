@@ -1,5 +1,4 @@
 import React from "react";
-import SliderItem from "./SliderItem";
 
 type TypeState = {
   sliderElement: number,
@@ -7,8 +6,12 @@ type TypeState = {
   currentSliderOffset: number,
 }
 
-class Slider extends React.Component<{}, TypeState> {
-  constructor(props: {}) {
+type TypeProps = {
+  // children: ReactNode,
+}
+
+class Slider extends React.Component<any, TypeState> {
+  constructor(props: any) {
     super(props);
     this.state = {
       sliderElement: 1,
@@ -27,7 +30,7 @@ class Slider extends React.Component<{}, TypeState> {
         <div className="slider__view">
           <div className="slider__all-pages" 
                style={{transform: `translateX: ${this.state.currentSliderOffset}px`}}>
-            <SliderItem />
+            {this.props.children}
           </div>
         </div>
       </div>

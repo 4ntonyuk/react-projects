@@ -1,6 +1,8 @@
 import React from "react";
 import IconText from "./components/IconText/IconText";
 import Slider from "./components/Slider/Slider";
+import SliderItem from "./components/Slider/SliderItem";
+
 
 class App extends React.Component<{}, {}> {
   constructor(props: {}) {
@@ -55,7 +57,11 @@ class App extends React.Component<{}, {}> {
           <a href="#!" className="font-contrast-color">Акции</a>
           <button className="etc-button"><img src="./img/range-of-furniture/etc.svg"/></button>
         </div>
-        <Slider />
+        <Slider>
+          <SliderItem />
+          <SliderItem />
+          <SliderItem />
+        </Slider>
       </>  
     );
   }
