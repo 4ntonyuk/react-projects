@@ -58,9 +58,9 @@ class App extends React.Component<{}, {}> {
           <button className="etc-button"><img src="./img/range-of-furniture/etc.svg"/></button>
         </div>
         <Slider>
-          <SliderItem />
-          <SliderItem />
-          <SliderItem />
+          <SliderItem title="1" />
+          <SliderItem title="1" />
+          <SliderItem title="1" />
         </Slider>
       </>  
     );

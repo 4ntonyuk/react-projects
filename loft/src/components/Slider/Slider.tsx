@@ -1,20 +1,16 @@
 import React from "react";
 
 type TypeState = {
-  sliderElement: number,
+  sliderElements: number,
   widthSliderElemet: number,
   currentSliderOffset: number,
-}
-
-type TypeProps = {
-  // children: ReactNode,
 }
 
 class Slider extends React.Component<any, TypeState> {
   constructor(props: any) {
     super(props);
     this.state = {
-      sliderElement: 1,
+      sliderElements: this.props.children,
       widthSliderElemet: Number(getComputedStyle(document.documentElement)
                           .getPropertyValue("--container-width")
                           .replace("px", "")),
@@ -22,16 +18,19 @@ class Slider extends React.Component<any, TypeState> {
     };
     this.handleArrowClick = this.handleArrowClick.bind(this);
   }
-
   render(): JSX.Element {
     {console.log(this.state.widthSliderElemet)}
     return(
-      <div className="slider">
+      <div className="slider container">
         <div className="slider__view">
           <div className="slider__all-pages" 
                style={{transform: `translateX: ${this.state.currentSliderOffset}px`}}>
             {this.props.children}
           </div>
+        </div>
+        <div className="slider__selectors">
+          <button className="slider__selector-btn"></button>
+          <button className="slider__selector-btn"></button>
         </div>
       </div>
     );
@@ -49,7 +48,7 @@ class Slider extends React.Component<any, TypeState> {
         this.setState({
           currentSliderOffset: Math.max(
             this.state.currentSliderOffset - this.state.widthSliderElemet,
-            -(this.state.sliderElement) // дописать!!!                              ~~~~~~~~~~~~~~~~~~~~
+            -(this.state.sliderElements + this.state.sliderElements) // дописать!!!                              ~~~~~~~~~~~~~~~~~~~~
           )
         })
         break;
